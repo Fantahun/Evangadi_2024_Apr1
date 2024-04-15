@@ -1,0 +1,17 @@
+Suggested videos to watch
+
+Chrome Developer's Tool - Crash Course
+https://www.youtube.com/watch?v=x4q86IjJFag
+
+
+
+Reference materials
+
+Measurement units used in CSS
+https://www.w3schools.com/cssref/css_units.asp
+
+Commonly used CSS properties
+https://zellwk.com/blog/9-important-css-properties-you-must-know/
+
+How to include custom fonts on your website
+https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website

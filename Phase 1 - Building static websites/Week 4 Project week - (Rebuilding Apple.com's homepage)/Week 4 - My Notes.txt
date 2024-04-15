@@ -1,0 +1,20 @@
+6. Rebuilding Apple.com's homepage using HTML & CSS
+
+Reference materials
+
+Commonly used CSS properties
+https://zellwk.com/blog/9-important-css-properties-you-must-know/
+
+How to include custom fonts on your website
+https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+
+
+
+
+7. Introduction to UX/UI design
+
+
+Suggested video to watch
+
+Photoshop tutorial
+https://www.youtube.com/watch?v=pFyOznL9UvA
