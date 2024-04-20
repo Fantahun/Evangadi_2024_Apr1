@@ -38,10 +38,32 @@ nav ul li {
 
 nav a {
     color: rgba(0, 0, 0, 0.72);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#title a:hover,nav a:hover{
+    color: rgba(0, 0, 0);
+}
+
+/* hover effect on the nav links - from left to right with transition */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:rgba(0, 0, 0, 0.80); 
+    transition: width 0.3s ease;    
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 #title  a{
-    color: rgba(0, 0, 0, 0.88);
+    color: rgba(0, 0, 0, 0.80);
     font-weight: bolder;
 }
 
