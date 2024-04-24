@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header section and some common rules for the footer [uncomment it if u use the backgound property for hero image] */
+header {
+  height: 100vh;
+  /* border: 5px solid black; */
+}
+
+header .header-title,
+footer {
+  background-color: #0c4f70;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-title {
+  height: 10vh;
+}
+
+/* hero image seciont using background property [fix the image overlaping on puppies image holder container] */
+.hero-image-section {
+  height: 90%;
+  background-image: url(../images/banner-puppies.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-image-section img {
+  width: 100%;
+}
+
+/* main section */
+.content-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* first puppies section */
+.puppies-image-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.puppies {
+  width: 30%;
+}
+
+.puppies img {
+  width: 100%;
+}
+
+.missing-puppy {
+  background-color: #ef4c64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  /*Set font size using viewport width (vw) units so that it wont affect the div height */
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* more puppies section */
+.more-puppies {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-puppies h2 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.more-puppies :nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-puppies-img-wrapper div {
+  width: 46%;
+}
+
+.more-puppies-img-wrapper div img {
+  width: 100%;
+}
+
+/* footer section */
+footer {
+  padding: 40px 0;
+}
+
+#developer-name {
+  font-weight: bold;
+}
+
+/* youtube icon related styles  */
+footer .fa-youtube {
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 5px;
+  color: white;
+}
+
+footer .fa-youtube:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: #0c4f70 !important;
+  transition: background-color ease-in 0.7s;
+}
+
+footer .fa-youtube:active {
+  color: #ffffff !important;
+}
