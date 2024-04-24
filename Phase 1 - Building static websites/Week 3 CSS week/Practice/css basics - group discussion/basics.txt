@@ -1,0 +1,53 @@
+😉 MASTERING THE BASICS 😉
+
+# css?
+- CSS is a set of instructions telling the browser what to do with the HTML
+    - Styling Text (font size, bold, underline, italic)
+    - Layout Design
+    - Colors and Backgrounds
+    - Forms Styling .... 
+
+    ## C in CSS 👉 "Cascading"
+    - Cascading Order: which rule wins if we specify two rules for same selected element/s?
+    - Inheritance: CSS also lets styles be inherited from one element to another (parent to child)
+    - Priority and specificity: CSS rules can come from different places (specificity and linking css order)
+    
+
+# how to add css?
+- inline h1  
+- internal
+- external (linking inside head tag)
+
+
+**** OFF TOPIC ****
+
+### SEPARATION OF CONCERN (SOC)
+- a design principle in web development
+- SoC typically refers to separating the structure (HTML DO ITS JOB), presentation (CSS DO ITS JOB) ... 
+- BECAUSE OF THIS MOSTLY EXTERNAL CSS IS MOSTLY USED INSTEAD OF TYPING CSS CODE
+INSIDE OUR HTML FILES
+****
+
+# basic rule of writing css?
+
+selector {
+    property:value;
+    property:value;
+    property:value;
+
+}
+
+
+# how to select things?
+- using the html tags (type selector) directly
+- using id attribute
+- using class attribute
+- star selector all
+
+# containerizing
+- how to containerize and structure things in HTMl and style in css
+
+# css units
+- pixel
+- percent (%)
+

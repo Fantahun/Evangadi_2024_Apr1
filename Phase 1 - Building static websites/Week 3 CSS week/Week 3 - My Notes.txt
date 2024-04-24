@@ -15,3 +15,28 @@ https://zellwk.com/blog/9-important-css-properties-you-must-know/
 
 How to include custom fonts on your website
 https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+
+
+========== CSS positioning Main concepts (5 properties) =======
+
+=> https://www.youtube.com/watch?v=jx5jmI0UlXU&ab_channel=WebDevSimplified
+
+# default is static, its based on how it behaves by default (element position nature)
+
+# Relative:
+	-
+	-
+	-
+	-
+	-
+	-
+	-
+
+# Absolute:
+	-
+	-
+	-
+	-
+	-
+	-
+	-
