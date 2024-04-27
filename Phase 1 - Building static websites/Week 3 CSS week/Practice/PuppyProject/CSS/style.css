@@ -18,12 +18,12 @@ header {
   /* border: 5px solid black; */
 }
 
-header .header-title,
+header,
 footer {
   background-color: #0c4f70;
   text-align: center;
   color: white;
-  padding: 10px 0;
+  padding: 20px 0 0;
 }
 
 .header-title {
@@ -100,7 +100,8 @@ footer {
 
 /* footer section */
 footer {
-  padding: 40px 0;
+  padding: 80px 0;
+  font-size: 20px;
 }
 
 #developer-name {
