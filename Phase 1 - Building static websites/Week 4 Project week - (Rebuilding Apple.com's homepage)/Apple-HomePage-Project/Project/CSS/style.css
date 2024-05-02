@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  /* this makes the default font size 10px and make calculations easier in 10s places on rem units, if the default font size by browser is 16px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem; /* Equivalent to 16px */
+  line-height: 1.6; /* Ensures consistent line spacing */
+}
+
+h1 {
+  font-size: 2.4rem; /* Equivalent to 24px */
+}
+
+h2 {
+  font-size: 2rem; /* Equivalent to 20px */
+}
+
+h3 {
+  font-size: 1.8rem; /* Equivalent to 18px */
+}
+
+h4 {
+  font-size: 1.6rem; /* Equivalent to 16px */
+}
+
+h5 {
+  font-size: 1.4rem; /* Equivalent to 14px */
+}
+
+h6 {
+  font-size: 1.2rem; /* Equivalent to 12px */
+}
+
+p {
+  font-size: 1.6rem; /* Equivalent to 16px */
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navigation */
+header {
+  background-color: #333333;
+  padding: 1rem;
+}
+
+.inner-container,
+nav {
+  width: 90.6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inner-container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icons {
+  width: 1.8rem;
+}
+
+nav ul li a {
+  /* center the nav icons vertically center */
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0.8;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+/* Nav ends here */
+
+/* main Highlight section starts here*/
+
+.model {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.main-highlight-wrapper .item-title {
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.item-description {
+  font-size: 2rem;
+  /* margin: 1rem auto; */
+}
+
+.main-highlight-wrapper .item-description {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem;
+  font-weight: 500;
+  /* font-size: 1.5rem; */
+}
+
+.item-img-wrapper {
+  margin: 20px auto;
+
+  /* try to add a box shadow for the images after correcting the asset on PS */
+}
+
+/* second section - iphone 11 pro section */
+
+.second-highlight-wrapper {
+  background: url("../images/home/iphone11-pro-bg.jpg");
+}
+
+.item-title {
+  margin-top: 10px;
+  font-size: 3.5rem;
+}
+
+.price {
+  color: #89898b;
+}
+
+/* Third section - iphone 11 pro section */
+.third-highlight-wrapper {
+  background: url("../images/home/iphone11-bg.jpg");
+}
+
+.third-highlight-wrapper .item-title,
+.third-highlight-wrapper .item-description {
+  color: black;
+}
+
+/* for the highlight sections that have a background image */
+.has-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 58rem;
+  color: white;
+}
+
+/* products list, cards section starts here */
+
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 10px;
+  /* margin: 1rem; */
+}
+
+.product-logo {
+  margin: 2rem auto auto auto;
+  width: 20rem;
+}
+
+.brief {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+.products-list .info-links {
+  margin: 0;
+}
+
+.apple-watch {
+  background: url("../images/home/watch-series-5.jpg");
+}
+
+.apple-card {
+  background: url("../images//home/apple-card.jpg");
+}
+
+.apple-tv {
+  background: url("../images/home/apple-tv-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+.apple-airpods {
+  background: url("../images/home/air-pods.jpg");
+  color: #fff;
+  background-size: initial;
+  background-color: #000;
+  background-position: bottom;
+
+  background-repeat: no-repeat;
+}
+
+.macbook-pro {
+  background: url("../images/home/macbook-pro2.jpg");
+  background-size: initial;
+  background-position: bottom !important;
+}
+
+.ipad {
+  background: url("../images/home/new-ipad.jpg");
+}
+
+.card-bg {
+  width: 50rem;
+  height: 5rem;
+  /* border: 2px solid blue; */
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+/* footer part */
+
+.footer-wrapper {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 0.65em;
+}
+
+.footer-wrapper ul {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.upper-text-container {
+  text-align: justify;
+  font-size: 1.4rem;
+  color: #86868b;
+  margin-bottom: 2.5rem;
+}
+
+.upper-text-container a {
+  color: #515154;
+}
+
+.upper-text-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-links-wrapper,
+.copyright-wrapper,
+.footer-links-terms ul,
+.footer-country {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-links-wrapper h3 {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-right: 5rem;
+}
+
+.footer-links-wrapper ul {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links-wrapper ul li {
+  line-height: 1.5rem;
+}
+.my-apple-wrapper {
+  text-align: left;
+  margin: 3rem auto;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
