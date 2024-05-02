@@ -70,7 +70,7 @@ nav {
 }
 
 .inner-container {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +85,9 @@ nav ul {
 
 .nav-icons {
   width: 1.8rem;
+  
 }
+
 
 nav ul li a {
   /* center the nav icons vertically center */
@@ -105,18 +107,22 @@ nav ul li a:hover {
 .model {
   font-weight: 600;
   margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
 }
 
 .main-highlight-wrapper{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  line-height: 7rem !important;
 
 }
 
 .main-highlight-wrapper .item-title {
-  font-size: 4rem;
+  font-size: 7rem;
   margin: 0 auto;
 }
 
@@ -126,39 +132,62 @@ nav ul li a:hover {
 }
 
 .main-highlight-wrapper .item-description {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.main-highlight-wrapper .info-links{
+  margin-top: 0;
+  line-height: 3rem;
 }
 
 .info-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin: 1.5rem;
   font-weight: 500;
-  /* font-size: 1.5rem; */
+  font-size: 1.8rem;
+}
+
+.info-links a{
+  color:#06c;;
+}
+
+.info-links a:hover {
+color: black;
+}
+.second-highlight-wrapper a:hover,.apple-airpods a:hover{
+  color: white;
 }
 
 .item-img-wrapper img {
-  margin: 20px auto;
-  width: 40vw;
+  margin: 3rem auto;
+  width: 45vw;
 
   /* try to add a box shadow for the images after correcting the asset on PS */
 }
 
 /* second section - iphone 11 pro section */
+.highlight-bg .item-title{
+  font-weight: 600;
+}
+
+
 
 .second-highlight-wrapper {
   background: url("../images/home/iphone11-pro-bg.jpg");
 }
 
 .item-title {
-  margin-top: 10px;
-  font-size: 3.5rem;
+  margin-top: .5rem;
+  font-size: 5rem;
 }
 
 .price {
   color: #89898b;
+  margin-top: .5rem;
 }
 
 /* Third section - iphone 11 pro section */
@@ -185,20 +214,41 @@ nav ul li a:hover {
 .first-row,
 .second-row,
 .third-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 10px;
-  /* margin: 1rem; */
+display: flex;
+justify-content: space-between;
+/* gap: 1rem; */
+width: 90vw;
+}
+
+.card-bg{
+  width: 50%;
+  border: .2rem solid rgba(164, 163, 163, 0.1);
+  border-radius: 1rem;
+  height: 50rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: #f9f9f9 !important;
+}
+
+.bg-bottom{
+  background-position: bottom !important;
+  background-size: initial !important;
+  background-repeat: no-repeat !important;
 }
 
 .product-logo {
-  margin: 2rem auto auto auto;
   width: 20rem;
+  margin: 0 auto;
+  /* margin: auto; */
+  padding-top: .5rem;
+
 }
 
 .brief {
-  max-width: 40rem;
+  max-width: 35rem;
   margin: 1rem auto;
 }
 
@@ -208,6 +258,7 @@ nav ul li a:hover {
 
 .apple-watch {
   background: url("../images/home/watch-series-5.jpg");
+
 }
 
 .apple-card {
@@ -216,47 +267,59 @@ nav ul li a:hover {
 
 .apple-tv {
   background: url("../images/home/apple-tv-background.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between !important;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.learn-more a{
+  position: relative;
+}
+
+/* play icon for the apple tv watch trailer */
+.watch-more a::after{
+font-family: fontAwesome;
+content: "\f144";
+margin-left: .6rem;
+vertical-align: middle;
+
 }
 
 .apple-airpods {
   background: url("../images/home/air-pods.jpg");
-  color: #fff;
-  background-size: initial;
-  background-color: #000;
-  background-position: bottom;
+  background-color: black !important;
+  color: white;
 
-  background-repeat: no-repeat;
 }
 
 .macbook-pro {
   background: url("../images/home/macbook-pro2.jpg");
-  background-size: initial;
+  background-size: initial !important;
   background-position: bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.model2,.item-description2 {
+  font-weight: 600;
+}
+
+.item-title2{
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .ipad {
   background: url("../images/home/new-ipad.jpg");
 }
 
-.card-bg {
-  width: 50rem;
-  height: 5rem;
-  /* border: 2px solid blue; */
-  background-color: #f9f9f9;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1rem;
-}
 
 
 /* footer part */
 .footer-wrapper{
-  margin: 40px auto auto;
+  margin: 1rem auto auto;
+  padding: 1.5rem;
   background-color: #f5f5f7;
   color: #1d1d1f;
 }
@@ -283,7 +346,7 @@ nav ul li a:hover {
   text-align: justify;
   line-height: 4rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #d2d2d7;
+  border-bottom: .1rem solid #d2d2d7;
   color: #86868b; 
   margin: auto auto 2rem auto;
 }
@@ -324,7 +387,7 @@ nav ul li a:hover {
 }
 
 .my-apple-wrapper{
-  border-bottom: 1px solid #d2d2d7; 
+  border-bottom: .1rem solid #d2d2d7; 
   width: 100%;
   text-align: left;
   margin: .5rem;

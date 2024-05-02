@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
-  <!-- fontAwsome -->
+  <!-- fontAwsome for i tags -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -74,17 +74,19 @@
     <!-- Main Highlight Section Starts here -->
     <section class="main-highlight-wrapper">
       <div class="inner-container">
-        <p class="model">16-inch model</p>
-        <h2 class="item-title">MacBook Pro</h2>
-        <p class="item-description">The best for the brightest.</p>
-        <ul class="info-links">
-          <li class="learn-more">
-            <a href="">Learn More <i class="fa-solid fa-angle-right"></i></a>
-          </li>
-          <li class="buy">
-            <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
-          </li>
-        </ul>
+        <div>
+          <p class="model">16-inch model</p>
+          <h2 class="item-title">MacBook Pro</h2>
+          <p class="item-description">The best for the brightest.</p>
+          <ul class="info-links">
+            <li class="learn-more">
+              <a href="">Learn More <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="buy">
+              <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
         <div class="item-img-wrapper">
           <img src="./images/home/macbook-pro.png" alt="" />
         </div>
@@ -131,7 +133,7 @@
     <section class="products-list">
       <div class="inner-container">
         <div class="first-row">
-          <div class="apple-watch card-bg">
+          <div class="apple-watch card-bg bg-cover">
             <div class="product-logo">
               <img src="./images/icons/watch-series5-logo.png" alt="" />
             </div>
@@ -150,7 +152,7 @@
               </li>
             </ul>
           </div>
-          <div class="apple-card card-bg">
+          <div class="apple-card card-bg bg-cover">
             <div class="product-logo">
               <img src="./images/icons/apple-card-logo.png" alt="" />
             </div>
@@ -171,21 +173,23 @@
         </div>
 
         <div class="second-row">
-          <div class="apple-tv card-bg">
+          <div class="apple-tv card-bg bg-cover">
             <div class="product-logo">
               <img src="./images/icons/apple-tv-logo.png" alt="" />
             </div>
             <div class="servant-logo">
               <img src="./images/icons/servant-logo.png" alt="" />
             </div>
-            <ul class="info-links">
-              <li class="learn-more">
-                <a href="">Watch the trailer <i class="fa-solid fa-play"></i></a>
-              </li>
-            </ul>
+            <div>
+              <div class="info-links watch-more">
+
+                <a href="">Watch the trailer</a>
+
+              </div>
+            </div>
           </div>
 
-          <div class="apple-airpods card-bg">
+          <div class="apple-airpods card-bg bg-bottom">
             <p class="item-title2">AirPods Pro</p>
             <div class="brief">
               <p>Magic like you&apos;ve never heard.</p>
@@ -202,7 +206,7 @@
         </div>
 
         <div class="third-row">
-          <div class="macbook-pro card-bg">
+          <div class="macbook-pro card-bg bg-bottom">
             <p class="model2">16-inch model</p>
             <p class="item-title2">MacBook Pro</p>
             <p class="item-description2">The best for the brightest.</p>
@@ -214,15 +218,14 @@
                 <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
               </li>
             </ul>
-            <!-- <img src="./images/home/mac-laptop2.jpg" alt="" /> -->
           </div>
 
-          <div class="ipad card-bg">
+          <div class="ipad card-bg bg-cover">
             <div class="product-logo">
               <img src="./images/icons/new-ipad-logo.png" alt="" />
             </div>
             <div class="brief">
-              <p></p>
+              <p class="item-description2">Like a computer. Unlike any computer.</p>
             </div>
             <ul class="info-links">
               <li class="learn-more">
