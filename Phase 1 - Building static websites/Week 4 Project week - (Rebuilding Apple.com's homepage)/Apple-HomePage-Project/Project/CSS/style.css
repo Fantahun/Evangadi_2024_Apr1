@@ -107,6 +107,14 @@ nav ul li a:hover {
   margin-top: 1rem;
 }
 
+.main-highlight-wrapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .main-highlight-wrapper .item-title {
   font-size: 4rem;
   margin: 0 auto;
@@ -131,8 +139,9 @@ nav ul li a:hover {
   /* font-size: 1.5rem; */
 }
 
-.item-img-wrapper {
+.item-img-wrapper img {
   margin: 20px auto;
+  width: 40vw;
 
   /* try to add a box shadow for the images after correcting the asset on PS */
 }
@@ -163,7 +172,7 @@ nav ul li a:hover {
 }
 
 /* for the highlight sections that have a background image */
-.has-bg {
+.highlight-bg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -194,7 +203,7 @@ nav ul li a:hover {
 }
 
 .products-list .info-links {
-  margin: 0;
+  /* margin: 0; */
 }
 
 .apple-watch {
@@ -244,63 +253,111 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
-/* footer part */
 
-.footer-wrapper {
+/* footer part */
+.footer-wrapper{
+  margin: 40px auto auto;
   background-color: #f5f5f7;
   color: #1d1d1f;
-  font-size: 0.65em;
 }
 
-.footer-wrapper ul {
-  text-align: left;
-  font-size: 0.9rem;
+.footer-wrapper p{
+  font-size: 1.2rem !important;
 }
 
-.upper-text-container {
-  text-align: justify;
-  font-size: 1.4rem;
-  color: #86868b;
-  margin-bottom: 2.5rem;
-}
-
-.upper-text-container a {
+.footer-wrapper .inner-container ul li a {
+  font-size: 1.1rem;
   color: #515154;
 }
 
-.upper-text-container a:hover {
+.footer-wrapper .inner-container ul li a:hover {
   text-decoration: underline;
 }
 
-.footer-links-wrapper,
-.copyright-wrapper,
-.footer-links-terms ul,
-.footer-country {
+.inner-container h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.upper-text-container{
+  text-align: justify;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b; 
+  margin: auto auto 2rem auto;
+}
+
+.upper-text-container p{
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.upper-text-container a{
+  color: #515154; 
+}
+
+.upper-text-container a:hover{
+  text-decoration: underline; 
+}
+
+.footer-links-wrapper{
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-
-.footer-links-wrapper h3 {
-  font-size: 1.3rem;
   text-align: left;
-  margin-right: 5rem;
 }
-
-.footer-links-wrapper ul {
+.footer-links-wrapper ul{
   margin-bottom: 1.5rem;
 }
 
-.footer-links-wrapper ul li {
-  line-height: 1.5rem;
-}
-.my-apple-wrapper {
-  text-align: left;
-  margin: 3rem auto;
+.footer-links-wrapper ul li{
+  line-height: 2rem;
 }
 
-.copyright-wrapper {
+
+.copyright-wrapper, .footer-links-terms ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.my-apple-wrapper{
+  border-bottom: 1px solid #d2d2d7; 
+  width: 100%;
+  text-align: left;
+  margin: .5rem;
+  padding-bottom: .5rem;
+}
+
+.my-apple-wrapper a:hover{
+text-decoration: underline;
+}
+
+.copyright-wrapper .footer-links-terms ul li::after{
+  content: '|';
+  padding:  1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* remove the separator '|' from the last item */
+.footer-links-terms ul li:last-child::after{
+content: '';
+}
+
+.copyright-wrapper .copyright{
+font-size: 1.2rem;
+}
+
+.footer-country
+{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flag-wrapper{
+  display: flex;  /* this makes the flag centered vertically*/
+  align-items: center;
 }
