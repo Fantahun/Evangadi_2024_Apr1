@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", arial, helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: #0c4f70;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* banner image */
+.banner-image {
+  background-image: url("../images/banner-puppies.jpg");
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.top-puppies,
+.two-puppies {
+  margin: 30px;
+  /* background-color: black; */
+}
+
+/* common property for both puppies */
+.puppies {
+  width: 308px;
+  height: 310px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Scale background image to fit inside the container */
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.puppy-one {
+  background-image: url("../images/puppy-1.jpg");
+}
+
+.missing-puppy {
+  /* hide missing puppy on mobile devices */
+  display: none;
+}
+
+.puppy-two {
+  background-image: url("../images/puppy-2.jpg");
+}
+
+/* more puppies part */
+
+.more-puppies h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.puppy-three {
+  background-image: url("../images/puppy-3.jpg");
+}
+
+.puppy-four {
+  background-image: url("../images/puppy-4.jpg");
+}
+
+/* footer section */
+footer {
+  padding: 50px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* media queries part */
+
+@media (min-width: 768px) {
+  .top-puppies,
+  .two-puppies {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    /* background-color: black; */
+  }
+
+  .missing-puppy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef4c64;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .puppies {
+    background-position: center;
+    background-size: contain;
+    width: 33%;
+  }
+
+  .more-puppies .puppies {
+    background-size: cover;
+    width: 48%;
+  }
+
+}
