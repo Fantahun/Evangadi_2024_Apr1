@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", arial, verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header,
+footer {
+  background-color: #0c4f70;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* banner image section */
+.banner-image {
+  background: url("../images/banner-puppies.jpg");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.puppies-holder {
+  margin: 30px;
+}
+
+.puppy-one,
+.puppy-three {
+  margin-bottom: 20px;
+}
+
+.missing-puppy {
+  display: none;
+}
+
+.more-puppies h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer {
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* media query part */
+@media (min-width: 768px) {
+  .banner-image {
+    height: 400px;
+  }
+
+  .missing-puppy {
+    height: 300px;
+    padding: 30px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef4c64;
+  }
+
+  .missing-puppy p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+  }
+
+  .puppies-holder {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 20px auto 0;
+    margin-top: 20px;
+    padding: 20px;
+    /* background-color: black; */
+  }
+
+  .puppies img {
+    margin: 0 auto;
+  }
+
+  .puppies-holder1 .puppies {
+    width: 33%;
+  }
+  .puppies-holder1 .puppies img {
+    height: 300px;
+  }
+
+  .puppies-holder2 .puppies {
+    width: 48%;
+  }
+}
