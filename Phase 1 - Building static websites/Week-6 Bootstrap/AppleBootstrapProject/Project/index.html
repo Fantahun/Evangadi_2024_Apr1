@@ -16,6 +16,14 @@
     />
     <link rel='icon' href='images/icons/favicon.ico' type='image/x-icon'/ >
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Link to the Font-Awesome Font -->
     <link
       rel="stylesheet"
@@ -34,7 +42,6 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
-
   <body>
     <!-- Header navigation -->
     <div class="nav-wrapper fixed-top">
@@ -91,78 +98,196 @@
       </div>
     </div>
 
-    <!-- Hero / header section starts here-->
-    <section class="hero">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12">
-            <p class="model-small">16-inch modeel</p>
-            <h1>MacBook Pro</h1>
-            <p class="itm-description">The best for the brightest.</p>
+    <!-- Your code goes in here -->
+    <!--  -->
+    <!-- <div class="top-100"></div> -->
+
+    <!-- Main Highlight Section Starts here -->
+    <section class="main-highlight-wrapper top-100">
+      <div class="container text-center">
+        <div>
+          <p class="model">16-inch model</p>
+          <h2 class="item-title font-weight-bold h1">MacBook Pro</h2>
+          <p class="item-description h3">The best for the brightest.</p>
+          <ul
+            class="info-links list-unstyled text-decoration-none d-inline-flex"
+          >
+            <li class="learn-more mr-4">
+              <a href="">Learn More <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li class="buy">
+              <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="item-img-wrapper">
+          <img src="./images/home/macbook-pro.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Main Highlight Section Ends here -->
+
+    <section class="second-highlight-wrapper highlight-bg pt-5">
+      <div class="container text-center">
+        <h2 class="item-title font-weight-bold">iphone 11 Pro</h2>
+        <p class="item-description">
+          Pro cameras. Pro display. Pro performance.
+        </p>
+        <p class="price small small">From $24.95/mo. or $599 with trade-in.</p>
+        <ul class="info-links list-unstyled d-inline-flex">
+          <li class="learn-more mr-4">
+            <a href="">Learn More <i class="fa-solid fa-angle-right"></i></a>
+          </li>
+          <li class="buy">
+            <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Second Highlight wrapper Ends here -->
+
+    <!-- Third Highlight wrapper starts here -->
+    <section class="third-highlight-wrapper pt-5 highlight-bg">
+      <div class="container text-center">
+        <h2 class="item-title font-weight-bold">iphone 11</h2>
+        <p class="item-description">Just the right amount of everything.</p>
+        <p class="price small">From $16.62/mo. or $399 with trade-in.</p>
+        <ul class="info-links list-unstyled d-inline-flex">
+          <li class="learn-more mr-4">
+            <a href="">Learn More <i class="fa-solid fa-angle-right"></i></a>
+          </li>
+          <li class="buy">
+            <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- side by side products list -->
+    <section class="products-list text-center">
+      <div class="container-fluid">
+        <div class="first-row row mb-3">
+          <div class="apple-watch card-bg bg-cover col-12 col-md mr-md-3 p-3">
+            <div class="product-logo py-3">
+              <img src="./images/icons/watch-series5-logo.png" alt="" />
+            </div>
+            <div class="brief">
+              <p>
+                With the new Always-On-Retina display. <br />
+                You&apos;ve never seen a wath like this.
+              </p>
+            </div>
+            <ul class="info-links list-unstyled d-inline-flex">
+              <li class="learn-more mr-4">
+                <a href=""
+                  >Learn More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="buy">
+                <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
           </div>
-          <div class="more-Buy col-12">
-            <a href="#">Learn More</a>
-            <a href="#">Buy</a>
+
+          <div class="apple-card card-bg bg-cover col-12 col-md p-3">
+            <div class="product-logo py-3">
+              <img src="./images/icons/apple-card-logo.png" alt="" />
+            </div>
+            <div class="brief">
+              <p>Get 3% Daily Cash on purchases from Apple Using Apple Card.</p>
+            </div>
+            <ul class="info-links list-unstyled d-inline-flex">
+              <li class="learn-more mr-4">
+                <a href=""
+                  >Learn More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="buy">
+                <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
           </div>
-          <div class="hero-image">
-            <img
-              src="./images/home/macbook-pro.jpg"
-              alt="MacBook Pro hero image"
-            />
+        </div>
+
+        <div class="second-row row mb-3">
+          <div
+            class="apple-tv card-bg bg-cover col-12 col-md mr-md-3 d-flex flex-column justify-content-around"
+          >
+            <div class="product-logo">
+              <img src="./images/icons/apple-tv-logo.png" alt="" />
+            </div>
+            <div class="servant-logo">
+              <img src="./images/icons/servant-logo.png" alt="" />
+            </div>
+            <div>
+              <div class="info-links watch-more">
+                <a href="">Watch the trailer</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="apple-airpods card-bg bg-bottom col-12 col-md pt-5">
+            <p class="item-title2 h2 font-weight-bold">AirPods Pro</p>
+            <div class="brief lead">
+              <p>Magic like you&apos;ve never heard.</p>
+            </div>
+            <ul class="info-links list-unstyled d-inline-flex">
+              <li class="learn-more mr-4">
+                <a href=""
+                  >Learn More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="buy">
+                <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="third-row row mb-3">
+          <div class="macbook-pro card-bg bg-bottom col-12 col-md mr-md-3 pt-3">
+            <div class="model2 font-weight-bold pt-3">16-inch model</div>
+            <div class="item-title2 font-weight-bold h1">MacBook Pro</div>
+            <p class="item-description2 lead font-weight-bold">
+              The best for the brightest.
+            </p>
+            <ul class="info-links list-unstyled d-inline-flex">
+              <li class="learn-more mr-4">
+                <a href=""
+                  >Learn More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="buy">
+                <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ipad card-bg bg-cover col-12 col-md">
+            <div class="product-logo py-3">
+              <img src="./images/icons/new-ipad-logo.png" alt="" />
+            </div>
+            <div class="brief font-weight-bold">
+              <p class="item-description2">
+                Like a computer. Unlike any computer.
+              </p>
+            </div>
+            <ul class="info-links list-unstyled d-inline-flex">
+              <li class="learn-more mr-4">
+                <a href=""
+                  >Learn More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="buy">
+                <a href="">Buy <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- Hero / header section ends here-->
 
-    <!-- Promo1 section starts here-->
-    <section class="promo1 row">
-      <h2 class="promo-title">iphone 11 Pro</h2>
-      <p class="promo-description">
-        Pro cameras. Pro display. Pro performance.
-      </p>
-
-      <p class="promo-price">From $24.95/mo. or $599 with trade-in.</p>
-
-      <div class="more-Buy col-12">
-        <a href="#">Learn More</a>
-        <a href="#">Buy</a>
-      </div>
-    </section>
-    <!-- Promo1 section ends here-->
-
-    <!-- Promo2 section starts here-->
-    <section class="promo2 row">
-      <h2 class="promo-title">iphone 11</h2>
-      <p class="promo-description">Just the right amount of everything.</p>
-
-      <p class="promo-price">From $16.62/mo. or $399 with trade-in.</p>
-
-      <div class="more-Buy col-12">
-        <a href="#">Learn More</a>
-        <a href="#">Buy</a>
-      </div>
-    </section>
-    <!-- Promo2 section ends here-->
-
-    <!-- Card like promos section starts here-->
-    <section class="promo-card row">
-      <div class="first-row">
-        <div class="apple-watch card"></div>
-        <div class="apple-card card"></div>
-      </div>
-      <div class="Second-row">
-        <div class="apple-tv card"></div>
-        <div class="airpods card"></div>
-      </div>
-      <div class="third-row">
-        <div class="macBook-pro card"></div>
-        <div class="ipad card"></div>
-      </div>
-    </section>
-    <!-- Card like promos section ends here-->
-
-    <!-- Footer section starts here -->
+    <!-- Footer section stats here -->
     <footer class="footer-wrapper">
       <div class="container">
         <div class="upper-text-container">
