@@ -1,0 +1,105 @@
+👉HTML elements structure
+	BEWARE OF UNCLOSED TAGS
+	WHICH BOOTSTRAP PROPERTY FOR WHICH TAG?
+
+👉Html id for on page navigation
+	<a href="#about">   <section id="about">
+
+👉Navigate to other pages in html using anchor tag
+	<a href="about.html"> 
+
+👉Bootstrap 5?
+👉container types and their application
+	Container and container-fluid
+	
+👉Easily Navigating bootstrap documentation and using stuff from it
+	Copy some example code based on your choice and modify things by reading the content 
+	
+👉Bootstrap icons and font awesome icons, using their CDN and applying them in projects
+Grid system concepts in short
+	Row and col  and offset
+	
+👉Bootstrap flexbox and gaps in x, y direction
+	d-flex  justify-content-center    align-items-center
+	
+👉Bootstrap colouring system
+	Primary, secondary, light, dark, info, success, warning 
+	
+👉Backgrounds
+	Bg-primary, bg-secondary,info,dark,light,success,warning
+
+👉CONTENT
+Images and img-fluid to make them stay in their container
+	Img-fluid  and  img-thumbnail   for round border
+	
+👉Tables in html and bootstrap to present tabular data
+	table table-hover, table-striped
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">First</th>
+	      <th scope="col">Last</th>
+	      <th scope="col">Handle</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Mark</td>
+	      <td>Otto</td>
+	      <td>@mdo</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">2</th>
+	      <td>Jacob</td>
+	      <td>Thornton</td>
+	      <td>@fat</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">3</th>
+	      <td colspan="2">Larry the Bird</td>
+	      <td>@twitter</td>
+	    </tr>
+	  </tbody>
+	</table>
+	
+	
+👉COMPONENTS
+Cards (content container) in bootstrap
+	Vertical Cards
+		<div class="card" style="width: 18rem;">
+		  <img src="..." class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">Card title</h5>
+		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+		
+
+	👉Horizontal Cards
+		<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+		
+	
+👉Buttons
+		Base class: btn
+		  how to use: btn-primary, btn-dark, btn-link
+		OUTLINE BUTTONS:    btn-outline-primary
+		BUTTON SIZING:  btn-lg, btn-sm 
+		DISABLED STATE ON BUTTONS:  disabled
+	
+...
