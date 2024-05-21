@@ -61,7 +61,6 @@ img {
   height: 540px;
 }
 
-
 .price {
   color: #89898b;
 }
@@ -120,7 +119,6 @@ img {
 .apple-tv {
   background: url("../images/home/apple-tv-background.jpg");
   height: 580px;
-
 }
 
 .learn-more a {
@@ -141,7 +139,7 @@ img {
 }
 
 .macbook-pro {
-  background: url("../images/home/macbook-pro.jpg");
+  background: url("../images/home/macbook-pro-list.png");
   height: 580px;
 
   background-size: initial !important;
@@ -159,7 +157,6 @@ img {
 }
 
 /* my added CSS content ends here */
-
 
 /* Footer Styling */
 .footer-wrapper {
