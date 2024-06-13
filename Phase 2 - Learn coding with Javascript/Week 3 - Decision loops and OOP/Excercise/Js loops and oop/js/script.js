@@ -18,7 +18,7 @@ for (let i = 1; i<=10; i++) {
 // console. Note: each output should be displayed on a new line.
 // ○ Test case: If you give 7 to the function, output should look like this:
 // 8
-// 9
+// 9[1, "Hello", 8, 44]
 // 10
 // 11
 // 12
@@ -38,6 +38,17 @@ nextFive(7)
 // given number.
 // ○ Test case: If you give 7 to the function, output should be: 125 - because (8 + 9 + 10+
 // 11+ 12+ 13+ 14+ 15+ 16+ 17 = 125)
+
+function sumUp(n) {
+  let sum = 0;
+  for (let i = n + 1; i <= n + 10; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log(sumUp(7));
+
 // Question 4
 // ● Write a function that takes an array as an argument and prints every element of the array on the
 // console.
@@ -46,11 +57,31 @@ nextFive(7)
 // Hello
 // 8
 // 44
+
+function printArray(arr){
+  let counter = 0;
+  while(counter<=arr.length-1){
+    console.log(arr[counter]);
+    counter++;
+  }
+}
+
+let arr1 = [1, "Hello", 8, 44]
+printArray(arr1);
+
+
 // Question 5
 // ● Write a function that takes an array as an argument and prints the total number of elements
 // found in the array. Hint: use a property of the Array object to solve this question.
-// ○ Test case 1: Given the array a = [1, "Hello", 8, 44], output should be: 4
+// ○ Test case 1: Given the array a = , output should be: 4
 // ○ Test case 2: Given the array a = ["world", 13], output should be: 2
+
+function arrayLength(arr){
+  console.log(arr.length);
+}
+let arr2= ["world", 13]
+arrayLength(arr2)
+
 // Question 6
 // ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
 // all the numbers in the array.
@@ -58,6 +89,10 @@ nextFive(7)
 // should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
+
+
+
+
 // Question 7
 // ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
 // odd numbers of the array from the total sum of all even numbers and logs the result in the
