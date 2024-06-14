@@ -23,15 +23,12 @@ for (let i = 1; i<=10; i++) {
 // 11
 // 12
 
-/*
-let nextFive = (num)=>{
-for(i=num+1;i<=num+5;i++){
-    console.log(`${i}\n`);
-}
-}
-nextFive(7)
-
-*/
+// let nextFive = (num)=>{
+// for(i=num+1;i<=num+5;i++){
+//     console.log(`${i}\n`);
+// }
+// }
+// nextFive(7)
 
 // Question 3
 // ● Write a function that takes a single number and prints the sum of the next 10 numbers after the
@@ -39,15 +36,15 @@ nextFive(7)
 // ○ Test case: If you give 7 to the function, output should be: 125 - because (8 + 9 + 10+
 // 11+ 12+ 13+ 14+ 15+ 16+ 17 = 125)
 
-function sumUp(n) {
-  let sum = 0;
-  for (let i = n + 1; i <= n + 10; i++) {
-    sum += i;
-  }
-  return sum;
-}
+// function sumUp(n) {
+//   let sum = 0;
+//   for (let i = n + 1; i <= n + 10; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
 
-console.log(sumUp(7));
+// console.log(sumUp(7));
 
 // Question 4
 // ● Write a function that takes an array as an argument and prints every element of the array on the
@@ -58,17 +55,16 @@ console.log(sumUp(7));
 // 8
 // 44
 
-function printArray(arr){
-  let counter = 0;
-  while(counter<=arr.length-1){
-    console.log(arr[counter]);
-    counter++;
-  }
-}
+// function printArray(arr) {
+//   let counter = 0;
+//   while (counter <= arr.length - 1) {
+//     console.log(arr[counter]);
+//     counter++;
+//   }
+// }
 
-let arr1 = [1, "Hello", 8, 44]
-printArray(arr1);
-
+// let arr1 = [1, "Hello", 8, 44];
+// printArray(arr1);
 
 // Question 5
 // ● Write a function that takes an array as an argument and prints the total number of elements
@@ -76,11 +72,11 @@ printArray(arr1);
 // ○ Test case 1: Given the array a = , output should be: 4
 // ○ Test case 2: Given the array a = ["world", 13], output should be: 2
 
-function arrayLength(arr){
-  console.log(arr.length);
-}
-let arr2= ["world", 13]
-arrayLength(arr2)
+// function arrayLength(arr) {
+//   console.log(arr.length);
+// }
+// let arr2 = ["world", 13];
+// arrayLength(arr2);
 
 // Question 6
 // ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
@@ -89,9 +85,15 @@ arrayLength(arr2)
 // should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
+// let sumArray = (arr) => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   console.log(sum);
+// };
 
-
-
+// sumArray([3, 0]);
 
 // Question 7
 // ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
@@ -102,6 +104,19 @@ arrayLength(arr2)
 // ■ Sum of odd numbers: 5 + 99 = 104
 // ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
 // ■ Difference between total even and total odd numbers: 206 - 104 = 102
+
+// let evenFromOdd = (arr) => {
+//   let evens = 0;
+//   let odds = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] % 2 == 0 ? (evens += arr[i]) : (odds += arr[i]);
+//   }
+//   return evens - odds;
+// };
+
+// console.log(evenFromOdd([5, 6, 99, 8, 76, 4, 68, 44]));
+
 // Question 8
 // ● Write a function that takes an array as a parameter and logs in the console the elements that have
 // even indexes only. Notice: this question is not asking you to log elements with even value, but
@@ -117,71 +132,122 @@ arrayLength(arr2)
 // 11
 // 3
 // car
+
+// let evenItems = (arr) => {
+//   for (i = 0; i < arr.length; i += 2) {
+//     console.log(arr[i]);
+//   }
+// };
+
+// evenItems([5, 6, 99, 8, 76, 4, 68, 44]);
+
 // Questions on built in JavaScript methods
-// ***********************************
+// ****************************************
 // Questions 9 and 10 are dependent on the sampleArray provided below:
 // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 // Question 9
 // Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
-// Question 10
-// ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order
+
+// let popPush = (arr) => {
+//   arr.pop();
+//   arr.push(32);
+//   console.log(arr);
+// };
+// popPush([5, 6, 99, 8, 76, 4, 68, 44]);
 
 // Question 10
 // ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order
 // and prints the sorted array on the console
 // // Use the sort method. Make sure you understand just using the sort() method alphabetically.
 // You should use this sorting syntax - sort(function(a, b){return a-b});
+
+// let sortAsc = (arr) => {
+//   console.log(arr.sort((a, b) => a - b));
+// };
+// sortAsc([5, 6, 99, 8, 76, 4, 68, 44]);
+
 // Questions on JavaScript objects
 // ****************************
 // The questions below ( questions 11 to 14) are based on the "evangadiClass" object provided below.
-// let evangadiClass = {
-// lengthOfCourse: "1 Month",
-// website: "https://www.evangadi.com/",
-// isChallenging: false,
-// topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
-// students: [
-// {
-// name: "Abebe",
-// age: 34,
-// sex: "M"
-// },
-// {
-// name: "Kebede",
-// age: 44,
-// sex: "M"
-// },
-// {
-// name: "Almaz",
-// age: 27,
-// sex: "F"
-// },
-// {
-// name: "Challa",
-// age: 22,
-// sex: "M"
-// },
-// {
-// name: "Chaltu",
-// age: 19,
-// sex: "F"
-// }
-// ]
-// }
+let evangadiClass = {
+  lengthOfCourse: "1 Month",
+  website: "https://www.evangadi.com/",
+  isChallenging: false,
+  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+  students: [
+    {
+      name: "Abebe",
+      age: 34,
+      sex: "M",
+    },
+    {
+      name: "Kebede",
+      age: 44,
+      sex: "M",
+    },
+    {
+      name: "Almaz",
+      age: 27,
+      sex: "F",
+    },
+    {
+      name: "Challa",
+      age: 22,
+      sex: "M",
+    },
+    {
+      name: "Chaltu",
+      age: 19,
+      sex: "F",
+    },
+  ],
+};
 // Question 11
-// ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
-// console
+// ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the console
 // ○ // Use the dot notation "." to call the property you want to change
+
+evangadiClass.lengthOfCourse = "5 Month";
+console.log(evangadiClass);
+
 // Question 12
 // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the
 // console
 // ○ // Use an array method
+
+evangadiClass.topicsCovered.push("Bootstrap");
+console.log(evangadiClass);
+
 // Question 13
 // ● Write a function that takes the "evangadiClass" object as an argument and calculates the average
 // age of the class. Print the result on the console
+
+function calcAverage(obj) {
+  let totalAge = 0;
+  let averageAge = 0;
+  for (let i = 0; i < obj.students.length; i++) {
+    totalAge += obj.students[i].age;
+  }
+  averageAge = totalAge / evangadiClass.students.length;
+  console.log(averageAge);
+}
+
+calcAverage(evangadiClass);
+
 // Question 14
 // ● Write a function that takes the "evangadiClass" object as an argument and calculates the
 // percentage of male students in the class. Print the result on the console
+
+let malesPercent = (obj) => {
+  let malesCount = 0;
+  for (i = 0; i < obj.students.length; i++) {
+    if (obj.students[i].sex === "M") malesCount += 1;
+  }
+
+  let malesPercentage = (malesCount * 100) / obj.students.length;
+  console.log(malesPercentage);
+};
+malesPercent(evangadiClass);
 
 // Puzzles
 // *******
