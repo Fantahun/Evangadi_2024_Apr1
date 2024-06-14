@@ -208,7 +208,7 @@ let evangadiClass = {
 // ○ // Use the dot notation "." to call the property you want to change
 
 evangadiClass.lengthOfCourse = "5 Month";
-console.log(evangadiClass);
+console.log(`Length of course: ${evangadiClass.lengthOfCourse}`);
 
 // Question 12
 // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the
@@ -216,7 +216,7 @@ console.log(evangadiClass);
 // ○ // Use an array method
 
 evangadiClass.topicsCovered.push("Bootstrap");
-console.log(evangadiClass);
+console.log(`topics covered: ${evangadiClass.topicsCovered}`);
 
 // Question 13
 // ● Write a function that takes the "evangadiClass" object as an argument and calculates the average
@@ -229,7 +229,7 @@ function calcAverage(obj) {
     totalAge += obj.students[i].age;
   }
   averageAge = totalAge / evangadiClass.students.length;
-  console.log(averageAge);
+  console.log(`Average Age: ${averageAge}`);
 }
 
 calcAverage(evangadiClass);
@@ -245,22 +245,63 @@ let malesPercent = (obj) => {
   }
 
   let malesPercentage = (malesCount * 100) / obj.students.length;
-  console.log(malesPercentage);
+  console.log(`males percentage: ${malesPercentage}`);
 };
 malesPercent(evangadiClass);
 
-// Puzzles
-// *******
-// Question 15: Test the divisors of three
-// ● Write a function that takes 2 parameters: a low and high number. Your goal is to print all
-// numbers (on the console) between low and high, and for each of these numbers print
-// whether or not the number is divisible by 3. If the number is divisible by 3, print the word
-// "div3" directly after the number.
-// Question 16: The famous coding interview question (FizzBuzz)
-// ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of
-// three print “Fizz” instead of the number and for the multiples of five print “Buzz” and for
-// numbers which are multiples of both three and five print "FizzBuzz".
-// Question 19: Evens number
-// ● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
-// number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
-// integer argument is an Evens number. The function prints 0 otherwise
+// // Puzzles
+// // *******
+// // Question 15: Test the divisors of three
+// // ● Write a function that takes 2 parameters: a low and high number. Your goal is to print all
+// // numbers (on the console) between low and high, and for each of these numbers print
+// // whether or not the number is divisible by 3. If the number is divisible by 3, print the word
+// // "div3" directly after the number.
+function highLow(low, high) {
+  for (let i = low; i <= high; i++) {
+    i % 3 == 0 ? console.log(`${i} -> div3`) : console.log(i);
+  }
+}
+highLow(1, 13);
+
+// // Question 16: The famous coding interview question (FizzBuzz)
+// // ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of
+// // three print “Fizz” instead of the number and for the multiples of five print “Buzz” and for
+// // numbers which are multiples of both three and five print "FizzBuzz".
+
+let fizzBuzz = () => {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log("FizzBuzz");
+    } else if (i % 5 == 0) {
+      console.log("Buzz");
+    } else if (i % 3 == 0) {
+      console.log("Fizz");
+    } else {
+      console.log(i);
+    }
+  }
+};
+
+fizzBuzz();
+
+// // Question 19: Evens number
+// // ● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
+// // number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
+// // integer argument is an Evens number. The function prints 0 otherwise
+
+// TODO: TRY TO CREATE A SOLUTION USING ARRAYS BY PUSHING AND THEN CHECKING IF ALL ARRAY ELEMENTS HOLD SAME VALUE
+
+let isEvens = (num) => {
+  let numStr = String(num); //convert it to string coz, we have to iterate throught the digits
+  for (let i = 0; i < numStr.length; i++) {
+    if (parseInt(numStr[i]) % 2 !== 0) {
+      //convert the digits to integer and then check if item isn't divisible by 2 (one non divisible item = argument is not fully even)
+      console.log(0);
+      return 0;
+    }
+  }
+  console.log(1);
+};
+
+isEvens(268420);
+isEvens(2618320);
