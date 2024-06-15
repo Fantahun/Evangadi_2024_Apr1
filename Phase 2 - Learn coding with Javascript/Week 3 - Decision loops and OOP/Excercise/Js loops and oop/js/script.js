@@ -257,11 +257,15 @@ malesPercent(evangadiClass);
 // // whether or not the number is divisible by 3. If the number is divisible by 3, print the word
 // // "div3" directly after the number.
 function highLow(low, high) {
-  for (let i = low; i <= high; i++) {
-    i % 3 == 0 ? console.log(`${i} -> div3`) : console.log(i);
+  if (high > low) {
+    for (let i = low; i <= high; i++) {
+      i % 3 == 0 ? console.log(`${i} -> div3`) : console.log(i);
+    }
+  } else {
+    console.log("the low value should be less than the higher value");
   }
 }
-highLow(1, 13);
+highLow(11, 13);
 
 // // Question 16: The famous coding interview question (FizzBuzz)
 // // ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of
@@ -305,6 +309,3 @@ let isEvens = (num) => {
 
 isEvens(268420);
 isEvens(2618320);
-
-evangadiClass.students[0].address = "Addis Ababa";
-console.log(evangadiClass.students[0]);
