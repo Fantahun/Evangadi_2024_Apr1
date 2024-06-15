@@ -228,7 +228,7 @@ function calcAverage(obj) {
   for (let i = 0; i < obj.students.length; i++) {
     totalAge += obj.students[i].age;
   }
-  averageAge = totalAge / evangadiClass.students.length;
+  averageAge = totalAge / obj.students.length;
   console.log(`Average Age: ${averageAge}`);
 }
 
@@ -305,3 +305,6 @@ let isEvens = (num) => {
 
 isEvens(268420);
 isEvens(2618320);
+
+evangadiClass.students[0].address = "Addis Ababa";
+console.log(evangadiClass.students[0]);
