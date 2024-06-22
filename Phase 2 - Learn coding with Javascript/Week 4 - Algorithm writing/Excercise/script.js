@@ -60,7 +60,7 @@ which contains all the even numbers in the original array, which also have even 
   */
 
 //   function returnFactorial(num) {
-//     let factorial = 1;
+//     let factorial = 1;7
 //     if (Number.isInteger(num) && num >= 0) {
 //       if (num === 0 || num==1) {
 //         return 1;
@@ -90,12 +90,46 @@ which contains all the even numbers in the original array, which also have even 
   does NOT contain n and also n*2 as value. Otherwise, the function prints “I am NOT a
   Meera array”
   
-  ○Test 1: checkMeera([10, 4, 0, 5]) outputs “I am NOT a Meera array” because 5 *
-  2 is 10
-  ○Test 2: checkMeera([7, 4, 9]) outputs “I am a Meera array”
-  ○Test 1: checkMeera([1, -6, 4, -3]) outputs “I am NOT a Meera array” because -3*2 is -6
+  ○Test 1: checkMeera([10,0, 4,0, 5]) outputs “I am NOT a Meera array” because 5*2 is 10
+  ○Test 2: checkMeera("[1, 4', 9]") outputs “I am a Meera array”
+  ○Test 1: checkMeera([1,2,3,'rich','birukti']) outputs “I am NOT a Meera array” because -3*2 is -6
   */
 
+//////// OPTION ONE /////////////
+/*
+function checkMeera(arr) {
+  let isMeeraArray = true;
+  // the provided value must be be an arry
+  //check if the array is fully number value
+  if (Array.isArray(arr) && arr.every((item) => typeof item == "number")) {
+    // check if every item multiplied by 2 is found in the array
+    for (let i = 0; i < arr.length; i++) {
+      //if item is 0 skip that iteration and move forward(if its required...)
+      if (arr[i] == 0) {
+        continue;
+      } else {
+        if (arr.includes(arr[i] * 2)) {
+          isMeeraArray = false;
+          break;
+        }
+      }
+    }
+    if (isMeeraArray) {
+      console.log("I am a meera array");
+    } else {
+      console.log("I am not a meera array");
+    }
+  } else {
+    console.log(
+      "invalid input, input must be array and all elements must be number types"
+    );
+  }
+}
+
+checkMeera([1, 0, 1, 3]); // not meera
+*/
+
+////////OPTION TWO/////////////
 //   function checkMeera(arr) {
 //     let isMeera = true;
 //     if (Array.isArray(arr) && arr.every((value) => typeof value == "number")) {
@@ -122,52 +156,54 @@ which contains all the even numbers in the original array, which also have even 
 //   checkMeera([7, 4, 9])
 //   checkMeera([1, -6, 4, -3]);
 
-
 /*
   Question 5 (Dual array)
-  ●Define a Dual array to be an array where every value occurs exactly twice. For example,
-  {1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5
-  occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two
-  times) Write a function named isDual that returns 1 if its array argument is a Dual array.
+  ●Define a Dual array to be an array where every value occurs exactly twice. 
+  For example,
+  [1, 2, 1, 3, 3, 2] is a dual array.The following arrays are not Dual arrays [2, 5, 2, 5, 5] (5
+  occurs three times instead of two times) [3, 3, 1, 2, 2] (3 occurs once instead of two
+  times) 
+
+  Write a function named isDual that returns 1 if its array argument is a Dual array.
   Otherwise it returns 0.
   */
-  
-  function dualArray(arr) {
-    let itemOccurance={};
 
-   if(!Array.isArray(arr) || arr.length%2!==0){
-   
+function dualArray(arr) {
+  let itemOccurance = {};
+
+  if (!Array.isArray(arr) || arr.length % 2 !== 0 || arr.length < 2) {
     return 0;
-   }
-    for(let i=0;i<arr.length;i++){
-      // if ((itemOccurance.hasOwnProperty(arr[i]))) {
- // below condition is based on truthy and flasy logic(if item exist with a value its truthy if not it will be undefined and it will be falsy)
-        if (itemOccurance[arr[i]]) {   
-                    itemOccurance[arr[i]]+=1;
-                }
-                else{
-                  itemOccurance[arr[i]]=1;
-               }
-            }
-   
-            // check the item occurance object for the result
-   for(key in itemOccurance){
-    if(itemOccurance[key]!==2){
-     
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    // if ((itemOccurance.hasOwnProperty(arr[i]))) {
+    // below condition is based on truthy and flasy logic(if item exist with a value its truthy if not it will be undefined and it will be falsy)
+    if (itemOccurance[arr[i]]) {
+      itemOccurance[arr[i]] += 1;
+      if (itemOccurance[arr[i]] > 2) { //when we found an item which has occured morethan two times, we return 0 and no need of checking the rest
+        console.log(itemOccurance);
+        return 0;
+      }
+    } else {
+      itemOccurance[arr[i]] = 1;
+    }
+  }
+
+  // check the item occurance object for the result
+  for (key in itemOccurance) {
+    if (itemOccurance[key] !== 2) {
       console.log(itemOccurance);
       return 0;
     }
   }
 
-    console.log(itemOccurance);
-    return 1;
-
-   
-  }
-  console.log(dualArray([1, 2, 1, 3, 3, 2])); // Output: 1
-  console.log(dualArray([2, 5, 2, 5, 5])); // Output: 0
-  // console.log(dualArray([3, 1, 1, 2, 2])); // Output: 0
-  // console.log(dualArray([4, 4, 6, 6])); // Output: 1
+  console.log(itemOccurance);
+  return 1;
+}
+console.log(dualArray([1, 2, 1, 1, 3, 3, 2])); // Output: 1
+// console.log(dualArray([2, 5, 2, 5, 5])); // Output: 0
+// console.log(dualArray([3, 1, 1, 2, 2])); // Output: 0
+// console.log(dualArray([4, 4, 6, 6])); // Output: 1
 
 /*
   Question 6
@@ -179,11 +215,62 @@ which contains all the even numbers in the original array, which also have even 
   ■digitalClock(87000) as "00:10:00" It's 00:10 next day
   */
 
+// function digitalClock(seconds) {
+//   // hour how much sec     3600 sec
+//   // minute how much sec   60 sec
+//   let hour = 0;
+//   let minute = 0;
+//   let second = 0;
+
+// hour = Math.floor((seconds % 86400) / 3600);
+// minute = Math.floor((seconds % 3600) / 60);
+// second = seconds % 60;
+
+//   hour = (seconds % 86400) / 3600;
+//   let convHour = String(hour);
+//   let hourWithoutDot='';
+// for(let i=0;i<3;i++){
+//   if(convHour[i]!='.'){
+//     hourWithoutDot+=convHour[i];
+//   }
+//   else if(convHour[i]==0){
+//     break;
+//   }
+// }
+// console.log('dot removed: '+hourWithoutDot);
+
+//   console.log(typeof convHour);
+
+//   minute = (seconds % 3600) / 60;
+//   let convMin = String(minute);
+
+//   // second = seconds % 60;
+//   // let convSec = String(second);
+
+//   // console.log(hour + ":" + minute + ":" + second);
+
+//   if (hour < 10) {
+//     hour = "0" + hour;
+//   }
+
+//   if (minute < 10) {
+//     minute = "0" + minute;
+//   }
+
+//   if (second < 10) {
+//     second = "0" + second;
+//   }
+//   console.log(hour + ":" + minute + ":" + second);
+// }
+
+// digitalClock(61201);
+
+/*
 function digitalClock(seconds) {
   let hour, min, sec;
   hour = Math.floor((seconds % 86400) / 3600); // calculate times in the current day otherwise we will get greater than 24 hours
-  min = Math.floor(((seconds % 86400) % 3600) / 60); // remaining minutes after extracting hours.
-  sec = Math.floor(((seconds % 86400) % 3600) % 60); // remaining seconds after extracting minutes.
+  min = Math.floor(((seconds % 3600) / 60); // remaining minutes after extracting hours.
+  sec = Math.floor(((seconds % 60); // remaining seconds after extracting minutes.
 
   //make 24 hours be displayed as 00
   if (hour == 24) {
@@ -206,3 +293,4 @@ function digitalClock(seconds) {
 digitalClock(5025); //as "01:23:45" 5025 seconds is 1 hour, 23 mins, 45 secs.
 digitalClock(61201); //as "17:00:01"   No AM/PM. 24h format.
 digitalClock(87000); //as "00:10:00" It's 00:10 next day
+*/
