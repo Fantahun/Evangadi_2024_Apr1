@@ -1,35 +1,35 @@
 // // Question 1
 // 1.1 Select the element with an id of "sample1".
-// let sample1 = document.getElementById("sample1");
-// // let sample2= document.querySelector('#sample1');
-// console.log(sample1);
-// // console.log(sample2);
-// console.log(sample1.innerText); // inner text  VS text content
+let sample1 = document.getElementById("sample1");
+let sample2 = document.querySelector("#sample1");
+console.log(sample1);
+console.log(sample2);
+console.log(sample1.innerText); // inner text  VS text content
 
 // // question 2
 
 // // 2.1 Select the element with an ID of "techCompanies" and display it on your  console. (Do not use "querySelector" for this question)
 
-// let techCompanies = document.getElementById("techCompanies");
-// console.log(techCompanies);
+let tech_companies = document.getElementById("techCompanies");
+console.log(tech_companies);
 
 //  2.2 Use "querySelector" to select the element with an ID of "techCompanies" and  display it on your console.
-// let techCompanies2 = document.querySelector("#techCompanies");
-// console.log(techCompanies2);
-// console.log(techCompanies2);
+let techCompanies2 = document.querySelector("#techCompanies");
+console.log(techCompanies2);
+console.log(techCompanies2);
 
 //  2.3 How many tech companies are listed under the ul element with an id of
 // "techCompanies"? Use "querySelectorAll" to count the total.
 
 let techCompaniesItems = document.querySelectorAll("#techCompanies li");
-// console.log(techCompaniesItems);
-// console.log(techCompaniesItems.length);
+console.log(techCompaniesItems);
+console.log(techCompaniesItems.length);
 
 // // 2.4 Select all elements with a class name of "red" and display them on the console.
 // // Use both "querySelectorAll" and "getElementByClass"
-// let reds = document.querySelectorAll(".red");
-// let reds2 = document.getElementsByClassName("red");
-// console.log(reds2);
+let reds = document.querySelectorAll(".red");
+let reds2 = document.getElementsByClassName("red");
+console.log(reds2);
 
 // console.log(reds);
 // for(let i=0;i<reds.length;i++){
@@ -70,11 +70,17 @@ blueCompanies.innerText = "the number of blue companies: " + blues.length;
 blues.forEach((el) => {
   blueCompanies.appendChild(el);
   console.log(el);
-  el.after("hello")
+});
+
+let blueCompaniess = document.querySelectorAll("#blueCompanies li");
+blueCompaniess.forEach((el) => {
   el.style.width = "380px";
- el.style.listStyleType = "none";
- el.style.borderBottom = "1px solid white";
-  el.style.padding = "10px";});
+  el.style.backgroundColor = "#111";
+  el.style.color = "white";
+  el.style.listStyleType = "none";
+  el.style.borderBottom = "1px solid white";
+  el.style.padding = "10px";
+});
 
 // // Question 3:
 // // Change the background color of the page to light-blue (#99ecff) when clicked on the text
@@ -82,27 +88,27 @@ blues.forEach((el) => {
 // // Hint: First, write two functions to alter the backgroundColor of the page. One to add a  background color, another to remove. Then, select the "yesBackground" or "noBackground" element and bind the selected element with the click event. Finally, attach the function you wrote to alter the background color when the respective element  is clicked on.
 
 // // below code will print on console log the backgroundColor the one we set inline bg on html side
-// let bodyBG = document.body.style.backgroundColor;
-// console.log(bodyBG);
+let bodyBG = document.body.style.backgroundColor;
+console.log(bodyBG);
 
 // // this will get the background of the body regardless (if its set inline or in css file we are okay), it will fetch the latest background color of body after things are rendered fully
 
-// let bodyBG2 = window.getComputedStyle(document.body).backgroundColor;
-// console.log(bodyBG2);
+let bodyBG2 = window.getComputedStyle(document.body).backgroundColor;
+console.log(bodyBG2);
 
-// function setBackground() {
-//   document.body.style.backgroundColor = "#99ecff";
-// }
+function setBackground() {
+  document.body.style.backgroundColor = "#99ecff";
+}
 
-// function removeBackground() {
-//   document.body.style.backgroundColor = "#FFF";
-// }
+function removeBackground() {
+  document.body.style.backgroundColor = "";
+}
 
 // //  we can use onClick too on HTML side but not ideal
-// let yesBackground = document.getElementById("yesBackground");
-// yesBackground.addEventListener("click", setBackground);
-// let noBackground = document.getElementById("noBackground");
-// noBackground.addEventListener("click", removeBackground);
+let yesBackground = document.getElementById("yesBackground");
+yesBackground.addEventListener("click", setBackground);
+let noBackground = document.getElementById("noBackground");
+noBackground.addEventListener("click", removeBackground);
 
 // // Question 4:
 // // A form with two text fields is provided under the section which says "For question 4".
@@ -124,13 +130,11 @@ submitButton.addEventListener("click", (event) => {
   let num1 = firstInput.value.trim(); //remove spaces if any, from first input
   let num2 = secondInput.value.trim(); //remove spaces if any, from first input
 
-  if (
-    isNaN(num1) ||
-    isNaN(num2) ||
-    firstInput.value == "" ||
-    secondInput.value == ""
-  ) {
-    resultHolder.textContent = "Please enter numerical values only";
+  if (isNaN(num1) || isNaN(num2) || num1 == "" || num2 == "") {
+    resultHolder.textContent =
+      "Please enter numerical values only and values must not be empty";
+    num1.value = "";
+    num2.value = "";
     console.log(resultHolder);
     return;
   } else {

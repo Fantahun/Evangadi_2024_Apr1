@@ -4,13 +4,16 @@
 .backgroundChange {
   padding: 20px;
   display: flex;
-  cursor: pointer;
 }
 #yesBackground,
 #noBackground {
   padding: 10px;
   border: 1px solid;
   margin-left: 20px;
+}
+#yesBackground:hover,
+#noBackground:hover{
+  cursor:pointer;
 }
 #techCompanies {
   max-width: 400px;
