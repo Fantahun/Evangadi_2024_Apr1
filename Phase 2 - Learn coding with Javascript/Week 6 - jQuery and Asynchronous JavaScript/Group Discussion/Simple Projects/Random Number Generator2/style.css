@@ -1,0 +1,29 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    border: 3px solid blueviolet;
+    padding: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+#generatedNumber{
+    font-size: 80px;
+    margin: 50px;
+}
+
+input{
+    padding: 10px;
+    margin:10px;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}

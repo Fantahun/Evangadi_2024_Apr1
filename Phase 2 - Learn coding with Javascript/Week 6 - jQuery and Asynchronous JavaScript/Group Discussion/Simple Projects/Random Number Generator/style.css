@@ -1,0 +1,37 @@
+body {
+  font-family: poppins, sans-serif;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#generatedNumber {
+  font-size: 50px;
+}
+
+#inputsHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+#min,
+#max {
+  padding: 5px;
+  margin: 5px;
+}
+
+#generate {
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+}
