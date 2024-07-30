@@ -1,4 +1,5 @@
-const express = require("express");
+const express = require("express"); // its not core module so we have to install it
+
 const path = require("path");
 const mime = require("mime-types");
 const rand = require("./randomNumber");
@@ -12,31 +13,31 @@ app.get('/random', (req, res) => {
     });
     */
 
-// Fallback route to serve static files for other paths
-app.use((req, res, next) => {
-  // Random number request
-  //   const randNum = rand();
-  //   res.send(JSON.stringify(randNum));
-  //random number request end here
+// style.css   // .css    mimetype     text/css
+// index.html  // .htmlmmmmmmmmmmmmm   text/html
+// logo.png   //  .png                 image/png
+// banner.jpg  // .jpg
 
+// Fallback route to serve static files for other paths
+const server = express();
+
+server.use(function (req, res) {
   // static file serving....
-  const fileExtension = path.extname(req.url); // style.css  => .css
-  const mimeType = mime.lookup(fileExtension); // determine MIME type, mime.lookup('.css') would return text/css.
-  res.sendFile(
-    path.join(__dirname, "static", req.url === "/" ? "index.html" : req.url),
-    { headers: { "Content-Type": mimeType } },
-    (err) => {
-      if (err) {
-        if (err.status === 404) {
-          res.status(404).send("Not Found");
-        } else {
-          res.status(500).send("Internal Server Error");
-        }
-      }
-    }
+  // const fileExtension = path.extname(req.url); // style.css  => .css
+  let filePath = path.join(
+    __dirname,
+    "static/apple-html-css-replica/",
+    req.url === "/" ? "index.html" : req.url
   );
+  // no need of reading file
+
+  const mimeType = mime.lookup(filePath);
+  console.log(req.url);
+  console.log(`mime type is>>> ${mimeType}`);
+
+  res.sendFile(filePath);
 });
 
-app.listen(1234, () => {
-  console.log("Server listening on port 1234");
+server.listen(888, function () {
+  console.log("Server listening on port 888");
 });

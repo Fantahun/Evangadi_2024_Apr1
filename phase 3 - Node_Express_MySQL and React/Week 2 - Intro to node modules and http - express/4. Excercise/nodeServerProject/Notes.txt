@@ -1,0 +1,52 @@
+what is server?
+
+client server architecture?
+
+www.youtube.com (domain name)         192.168.120.5 
+
+
+           my ip address (192.168.50)
+home    > www.youtube.com  >  isp  (tele)   keep X  > forward 
+  192.168.10.25                <  192.168.10.25         <
+
+
+fantahun tube  > 192.168.10.25  process
+     view            <
+
+
+desktop > fantahun > me.jpg    // yene photo nech   copy argulegn
+
+
+
+
+what is a request?
+
+what is a response?
+
+what are status codes for servers?
+404 > page not found
+200 > success
+
+
+100
+200   success
+300
+400   client request is kind of wrong
+500   server error / process.....
+
+
+
+file extension?
+.css .jpg .js .html
+
+
+getting file path on node?  // file location 
+
+file read on node?
+
+read content > send >   browser know how to manage the content
+
+
+
+
+
