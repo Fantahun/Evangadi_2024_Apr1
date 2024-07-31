@@ -1,0 +1,4 @@
+/add-product
+
+const addProduct = `INSERT INTO products(product_name,product_url)
+VALUES("ASUS 2024 MUX ROG ZEPHYRUS G14 14","https://m.media-amazon.com/images/I/71MvcFwIgEL._AC_UY218_.jpg")``
