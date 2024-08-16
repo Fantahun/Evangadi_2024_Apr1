@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="./CSS/Bootstrap/css/bootstrap.min.css" />
+
+    <!-- google poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+
+    <title>Puppy lovers page - Media Query</title>
+  </head>
+  <body>
+    <header class="py-2 text-light text-center">
+      <h1 class="fw-bold">Puppy Lovers Page</h1>
+    </header>
+
+    <section class="banner-image container-fluid"></section>
+    
+    <div class="container my-5">
+      <section class="puppies-holder puppies-holder1 row">
+        <div class="puppy-one puppies mb-3 mb-md-0 col-md-4">
+          <img src="./images/puppy-1.jpg" alt="puppy one image" />
+        </div>
+
+        <div
+          class="missing-puppy puppies d-none col-md-4 d-md-flex align-items-center justify-content-center p-5 text-center"
+        >
+          <p class="fw-bold fs-2 px-5">Missing Puppy Here!</p>
+        </div>
+
+        <div class="puppy-two puppies col-md-4">
+          <img src="./images/puppy-2.jpg" alt="puppy two image" />
+        </div>
+      </section>
+
+      <!-- more puppies section starts here -->
+      <section class="more-puppies row-cols-md-1">
+        <div class="my-4">
+          <h2 class="text-center fw-bold">More Puppies</h2>
+        </div>
+        <div class="puppies-holder puppies-holder2 row">
+          <div class="puppy-three puppies mb-3 mb-md-0 col-md-6">
+            <img src="./images/puppy-3.jpg" alt="puppy three image" />
+          </div>
+          <div class="puppy-four puppies col-md-6">
+            <img src="./images/puppy-4.jpg" alt="puppy four image" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="py-5 text-center fw-bold fs-3 text-light">
+      <p>Developed by: Fantahun Bishaw</p>
+    </footer>
+  </body>
+</html>

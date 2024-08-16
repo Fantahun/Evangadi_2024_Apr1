@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", arial, verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* try it with bootstrap */
+
+header,
+footer {
+  background-color: #0c4f70;
+  /* color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; */
+}

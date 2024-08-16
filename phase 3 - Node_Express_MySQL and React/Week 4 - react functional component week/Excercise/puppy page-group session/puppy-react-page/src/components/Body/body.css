@@ -1,0 +1,8 @@
+.puppies img {
+  height: 100%;
+}
+
+.missing-puppy {
+  /* height: 100%; */
+  background-color: #ef4c64;
+}
