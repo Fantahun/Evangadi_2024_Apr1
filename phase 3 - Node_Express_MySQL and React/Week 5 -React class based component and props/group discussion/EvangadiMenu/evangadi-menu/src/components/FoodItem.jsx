@@ -15,7 +15,7 @@ export default class FoodItem extends Component {
         </div>
         <div className="desc-btn-holder">
           <div className="food-desc">
-            {String(description).substring(0, 240) + " . . ."}
+            {String(description).substring(0, 350) + " . . ."}
           </div>
           <div className="btn-holder">
             <button className="read-more-btn">Read More</button>

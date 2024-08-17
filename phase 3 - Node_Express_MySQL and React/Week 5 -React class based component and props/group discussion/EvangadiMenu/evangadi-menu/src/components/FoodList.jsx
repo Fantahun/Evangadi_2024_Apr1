@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FoodItem from "./FoodItem";
-import menus from "../../assets/data";
+import menus from "../assets/data";
 
 export default class FoodList extends Component {
   render() {
