@@ -1,0 +1,23 @@
+body{
+    font-family: poppins,sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.increment-btn{
+    background-color: rgb(6, 190, 6);
+    color:white;
+    border: none;
+    font-size: 24px;
+    padding:10px 20px;
+}
+
+.increment-btn:hover{
+    background-color: rgb(6, 161, 6);
+cursor: pointer;
+}
